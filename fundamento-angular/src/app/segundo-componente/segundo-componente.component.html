@@ -1,0 +1,14 @@
+
+<img [src]="urlImagem" width="250">
+<p>Nome: {{ nome | uppercase }}</p>
+<p>Data nascimento: {{ dataNascimento | date: "dd/MM/yyyy" }}</p>
+
+<button (click)="mostrarDataNascimento()" type="button">Mostrar data de nascimento</button>
+
+<!--PROPERTY BINDING (Vinculação de propriedade) - neste exemplo foi feito um 'biding' ou 'vinculação' da 
+urlImagem com o atributo src da tag img utilizando um par de [] envolvendo o [src], permitindo utilizar
+apenas a variável para exibição da imagem no layout da página _ LINHA 3 -->
+
+<!--EVENT BINDING (Vinculação de evento) - basicamente é disparar um método a partir de um evento, neste
+exemplo foi utilizado o click do botão chamando o método mostrarDataNascimento() seguindo a sintaxe
+na linha 7 no trecho (click)="mostrarDataNascimento()". -->

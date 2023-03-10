@@ -1,0 +1,12 @@
+
+    <h2>Two-Way Data Binding</h2>
+    <label for="nome">Digite o nome: </label>
+    <input type="text" [(ngModel)]= "nome">
+    <p>Nome Digitado: {{ nome }}</p>
+    
+
+
+<!--O conceito de two-way-data-binding é fazer a vinculação de dados de 2 vias, sendo do componente para o
+template e do template para o componente para isso foi adicionado a propriedade ngModel dentro de um
+binding de evento () e este dentro de um binding de propriedade[] = [(ngModel)]. Essa propriedade pertence
+a biblioteca FormsModule que foi importada manualmente no arquivo app.module.ts -->
