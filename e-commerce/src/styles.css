@@ -58,3 +58,5 @@ table {
     --light-gray: rgba(232, 232, 232, 1);    
     --light-gray-2: rgb(247, 247, 247);
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
