@@ -7,9 +7,13 @@ export interface IProduto {
     imagem: string;
 }
 
+export interface IprodutoCarrinho extends IProduto {
+    quantidade: number;
+}
+
 export const produtos: IProduto[] = [
     { id: 1, descricao: "Mouse gamer", preco: 439.00, descricaoPreco: "À vista no PIX", imagem: "/assets/mouse-3.jpg", quantidadeEstoque: 15 },
-    { id: 2, descricao: "Monitor muito bom", preco: 1200.50, descricaoPreco: "À vista no PIX", imagem: "/assets/monitor-1.jpg", quantidadeEstoque: 10 },
+    {id: 2, descricao: "Monitor muito bom", preco: 1200.50, descricaoPreco: "À vista no PIX", imagem: "/assets/monitor-1.jpg", quantidadeEstoque: 10 },
     { id: 3, descricao: "Teclado excelente", preco: 749.99, descricaoPreco: "À vista no PIX", imagem: "/assets/teclado-1.jpg", quantidadeEstoque: 10},
     { id: 5, descricao: "Fone de ouvido", preco: 299.99, descricaoPreco: "À vista no PIX", imagem: "/assets/fone-de-ouvido-1.jpg", quantidadeEstoque: 10 },
     { id: 6, descricao: "Fone de ouvido bom", preco: 399.99, descricaoPreco: "À vista no PIX", imagem: "/assets/fone-de-ouvido-3.jpg", quantidadeEstoque: 10 },

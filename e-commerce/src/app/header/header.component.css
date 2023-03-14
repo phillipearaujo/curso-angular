@@ -36,6 +36,7 @@
   font-size: 22px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  border-radius: 4px;
 }
 
 .main-header__menu a:hover {
@@ -51,8 +52,8 @@
 }
 
 .badge-carrinho {
-  background-color: var(--dark-blue);
-  padding: 5px 10px;
+  background-color: var(--orange);
+  padding: 4px 7px;
   border-radius: 4px;
   color: white;
 }
