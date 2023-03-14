@@ -9,7 +9,6 @@ import { IprodutoCarrinho } from '../produtos';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent {
-
   itensCarrinho: IprodutoCarrinho[] = [];
   total = 0;
 
@@ -24,11 +23,11 @@ export class CarrinhoComponent {
   }
 
   calculaTotal() {
-    this.total = this.itensCarrinho.reduce((prev, curr) => (prev + curr.quantidade * curr.preco), 0);
+    this.total = this.itensCarrinho.reduce((prev, curr) => prev + (curr.quantidade * curr.preco), 0);
   }
 
-  removerProdutoCarrinho(produtoId: number) {
-    this.itensCarrinho = this.itensCarrinho.filter(item => item.id != produtoId);
+  removeProdutoCarrinho(produtoId: number) {
+    this.itensCarrinho = this.itensCarrinho.filter(item => item.id !== produtoId);
     this.carrinhoService.removerProdutoCarrinho(produtoId);
     this.calculaTotal();
   }

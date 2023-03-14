@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     CarrinhoRoutingModule,
     FormsModule
+    
   ]
 })
 export class CarrinhoModule { }

@@ -5,7 +5,6 @@ import { IprodutoCarrinho } from './produtos';
   providedIn: 'root'
 })
 export class CarrinhoService {
-
   itens: IprodutoCarrinho[] = [];
 
   constructor() { }
@@ -21,7 +20,7 @@ export class CarrinhoService {
   }
 
   removerProdutoCarrinho(produtoId: number) {
-    this.itens = this.itens.filter( item => item.id != produtoId);
+    this.itens = this.itens.filter( item => item.id !== produtoId);
     localStorage.setItem("carrinho", JSON.stringify(this.itens));
   }
 

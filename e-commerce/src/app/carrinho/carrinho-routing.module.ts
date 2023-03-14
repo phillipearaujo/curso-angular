@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CarrinhoComponent } from './carrinho.component';
 
 const routes: Routes = [
-  { path: '', component: CarrinhoComponent }
+  { path: 'carrinho', component: CarrinhoComponent }
 ];
 
 @NgModule({

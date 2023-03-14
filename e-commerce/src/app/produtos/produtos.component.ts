@@ -8,7 +8,6 @@ import { ProdutosService } from '../produtos.service';
   styleUrls: ['./produtos.component.css']
 })
 export class ProdutosComponent implements OnInit{
-
   produtos: IProduto[] | undefined;
 
   constructor(

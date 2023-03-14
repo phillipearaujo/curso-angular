@@ -4,18 +4,30 @@
         <span class="main-header__title--orange">Computers</span>
     </h1>
     <div class="container-menu">
-    <nav class="main-header--menu">
+    <nav class="main-header__menu">
         <ul class="flex">
-            <li><a>Produtos</a></li>
-            <li><a>Contato</a></li>
-            <li><a>
-            <i class="fa-solid fa-cart-shopping"></i> 
-            Carrinho 
-            <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
-            </a></li>
-            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+            <li>
+                <a>Produtos</a>
+            </li>
+            <li>
+                <a>
+                    <i class="fa-solid fa-cart-shopping"></i> 
+                    Carrinho 
+                    <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                </a>
+            </li>
+            <li>
+                <a>Contato</a>
+            </li>
+            <li>
+                <a><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a><i class="fa-brands fa-twitter"></i></a>
+            </li>
         </ul>
     </nav>
     <form class="search-form">
