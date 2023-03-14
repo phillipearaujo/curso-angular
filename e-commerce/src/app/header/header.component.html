@@ -7,17 +7,17 @@
     <nav class="main-header__menu">
         <ul class="flex">
             <li>
-                <a>Produtos</a>
+                <a routerLink="produtos">Produtos</a>
             </li>
             <li>
-                <a>
+                <a routerLink="carrinho">
                     <i class="fa-solid fa-cart-shopping"></i> 
                     Carrinho 
                     <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
                 </a>
             </li>
             <li>
-                <a>Contato</a>
+                <a routerLink="contato">Contato</a>
             </li>
             <li>
                 <a><i class="fa-brands fa-facebook-f"></i></a>
@@ -30,9 +30,6 @@
             </li>
         </ul>
     </nav>
-    <form class="search-form">
-        <input type="text">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
+    <app-search-bar></app-search-bar>
     </div>
 </header>

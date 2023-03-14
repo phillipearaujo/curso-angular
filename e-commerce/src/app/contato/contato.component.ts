@@ -34,4 +34,9 @@ export class ContatoComponent {
     private fb: FormBuilder
   ) { }
 
+  enviarFormulario() {
+    alert("Mensagem enviada!");
+    this.formContato.reset();
+  }
+
 }

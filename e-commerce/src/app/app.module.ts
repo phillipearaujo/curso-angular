@@ -9,20 +9,24 @@ import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule} from "@angular/material/snack-bar";
 import { CarrinhoModule } from './carrinho/carrinho.module';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NaoEncontradoComponent
+    NaoEncontradoComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSnackBarModule,
-    CarrinhoModule
+    CarrinhoModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
